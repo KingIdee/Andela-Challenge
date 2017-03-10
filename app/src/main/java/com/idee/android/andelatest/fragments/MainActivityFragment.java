@@ -98,7 +98,7 @@ public class MainActivityFragment extends Fragment implements DevelopersListAdap
             Log.d("TAG", "OnSaveInstance Used");
             progressBar.setVisibility(View.INVISIBLE);
             developerArrayList = savedInstanceState.getParcelableArrayList(DEV_LIST);
-            adapter.setMovieList(developerArrayList);
+            adapter.setList(developerArrayList);
 
         } else {
             checkConnectionAndMakeRequest();
@@ -144,7 +144,7 @@ public class MainActivityFragment extends Fragment implements DevelopersListAdap
                                 developerArrayList.add(developerModel);
                             }
 
-                            adapter.setMovieList(developerArrayList);
+                            adapter.setList(developerArrayList);
                             adapter.notifyDataSetChanged();
 
                         } catch (JSONException e) {

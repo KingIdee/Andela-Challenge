@@ -24,7 +24,7 @@ public class DevelopersListAdapter extends RecyclerView.Adapter<DevelopersListAd
         this.mContext = mContext;
     }
 
-    public void setMovieList(ArrayList<DeveloperModel> developerArrayList){
+    public void setList(ArrayList<DeveloperModel> developerArrayList){
         this.developerArrayList = developerArrayList;
         //notifyItemRangeChanged(0,developerArrayList.size());
         notifyDataSetChanged();
